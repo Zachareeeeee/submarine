@@ -11,7 +11,7 @@ function ballastInstance.new(volume, fill, position)
 end
 
 function ballastInstance:step(dt)
-    self.fill = math.clamp(fill + fillRate / volume * dt, 0, 1)
+    self.fill = math.clamp(self.fill + self.fillRate / volume * dt, 0, 1)
 end
 
 
